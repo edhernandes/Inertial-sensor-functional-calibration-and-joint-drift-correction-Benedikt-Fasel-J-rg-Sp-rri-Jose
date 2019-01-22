@@ -1,0 +1,32 @@
+metadata_version: 1
+name: Inertial sensor functional calibration and joint drift correction
+description: |-
+  Functional calibration procedures for trunk, lower- and upper-limb fixed inertial sensors. A set of known movements (squats, hip ad/abduction, arm swing, trunk rotation, upright standing) is used to align the sensor axes of each inertial sensor to the functional axes of each segment. This procedure is needed for obtaining repeatable results for inertial sensor based measurements and to express the recorded data in a common, comparable reference frame, independent of sensor mounting.
+  In addition, we included the joint drift correction algorithm to obtain drift-corrected orientation estimates for all sensors. This algorithm is especially well suited for fast and highly dynamic movements where traditional Kalman filters may not work. However, the joint drift correction cannot be used for very slow movements.
+
+  The code is written in the most generic form possible so that it can easily be re-used for any commercial inertial sensor.
+tags:
+- strapdown
+- inertial-sensors
+- motion-capture
+- drift-correction
+- sensor-fusion
+- joint-drift
+- biomechanics
+- calibration
+authors:
+- name: Benedikt Fasel
+  affiliations:
+  - name: École Polytechnique Fédérale de Lausanne
+- name: Jörg Spörri
+  affiliations:
+  - name: University of Salzburg
+- name: Josef Kröll
+  affiliations:
+  - name: University of Salzburg
+- name: Kamiar Aminian
+  affiliations:
+  - name: École Polytechnique Fédérale de Lausanne
+corresponding_contributor:
+  name: Benedikt Fasel
+  email: benedikt.fasel@epfl.ch
